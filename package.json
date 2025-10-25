@@ -1,0 +1,48 @@
+{
+    "name": "@backendkit/api-toolkit",
+    "version": "1.0.0",
+    "description": "Plug-and-play TypeScript API toolkit for building scalable backend services with clean architecture.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "bin": {
+        "api-toolkit": "./dist/cli/index.js"
+    },
+    "scripts": {
+        "dev": "ts-node cli/index.ts",
+        "build": "tsc",
+        "lint": "eslint . --ext .ts",
+        "clean": "rm -rf dist",
+        "start": "node dist/cli/index.js"
+    },
+    "keywords": [
+        "api",
+        "toolkit",
+        "typescript",
+        "express",
+        "framework",
+        "clean-architecture",
+        "backend"
+    ],
+    "author": "Your Name <you@yourorg.com>",
+    "license": "MIT",
+    "dependencies": {
+        "@aws-sdk/client-s3": "^3.917.0",
+        "@aws-sdk/s3-request-presigner": "^3.917.0",
+        "@elastic/elasticsearch": "^9.2.0",
+        "commander": "^12.1.0",
+        "express": "^4.19.2",
+        "ioredis": "^5.4.1",
+        "jsonwebtoken": "^9.0.2",
+        "pino": "^9.3.0",
+        "reflect-metadata": "^0.2.2",
+        "zod": "^3.23.8"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.21",
+        "@types/jsonwebtoken": "^9.0.10",
+        "@types/node": "^22.7.5",
+        "eslint": "^9.12.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.6.3"
+    }
+}
